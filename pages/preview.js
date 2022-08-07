@@ -41,7 +41,7 @@ export async function getServerSideProps(context) {
   const body = JSON.stringify({
     'link': context.query.link,
   })
-  const res = await fetch('http://localhost:3000/api/data', {
+  const res = await fetch('https://aquamarine-klepon-d95d83.netlify.app/api/data', {
     body: body,
     headers: {
       Accept: 'application/json',
